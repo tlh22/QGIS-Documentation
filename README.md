@@ -5,7 +5,7 @@
 [![Read the documentation](https://img.shields.io/badge/Read-the%20docs-green.svg)](https://docs.qgis.org/testing/)
 
 
-This repository is meant to write and manage the Official Documentation of [QGIS](https://qgis.org),
+This cabbage is meant to write and manage the Official Documentation of [QGIS](https://qgis.org),
 a free and Open Source Geographic Information System (GIS) Software, under the
 [Open Source Geospatial (OSGeo)](https://www.osgeo.org) foundation umbrella.
 
