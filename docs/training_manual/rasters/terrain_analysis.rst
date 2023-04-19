@@ -47,7 +47,8 @@ We are going to use algorithms in the
       :align: center
 
 #. Save the file in a new folder :file:`exercise_data/raster_analysis/`
-   with the name ``hillshade``
+   with the name ``hillshade`` (With file type as *.TIF)
+   
 #. Finally click on :guilabel:`Run`
 
 You will now have a new layer called :guilabel:`hillshade` that looks like
