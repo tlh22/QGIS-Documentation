@@ -42,8 +42,11 @@ property yet. First we will create a field for this purpose.
    .. figure:: img/column_settings.png
       :align: center
 
-#. After the field has been created, move to the
+#. Close the Properties form and save ...
+
+#. Reopen the Layer Properties and move to the
    :guilabel:`Attributes Form` tab and select the ``image`` field.
+   
 #. Set :guilabel:`Widget Type` to :guilabel:`Attachment`:
 
    .. figure:: img/select_file_name.png
