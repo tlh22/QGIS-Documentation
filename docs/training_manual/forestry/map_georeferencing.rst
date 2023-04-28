@@ -64,8 +64,7 @@ Next you should define the transformation settings for georeferencing the map:
 #. Press the |setProjection| :sup:`Select CRS` button next to
    the :guilabel:`Target SRS` option and select the ``EPSG:2392 - KKJ / Finland zone 2`` CRS;
    it is the CRS that was used in Finland back in 1994 when this map was created.
-#. Click the icon next to the :guilabel:`Output raster` box, go to the folder and
-   create the folder :file:`exercise_data\\forestry\\digitizing` and name the file
+#. Click the icon next to the :guilabel:`Output raster` box, go to the folder and name the file
    as :file:`rautjarvi_georef.tif`.
 #. Check |checkbox| :guilabel:`Load in QGIS when done`
 #. Leave the rest of parameters as default.
