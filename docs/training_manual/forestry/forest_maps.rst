@@ -3,8 +3,8 @@
 
 The systematic sampling design is ready and the field teams have loaded the GPS
 coordinates in their navigation devices. They also have a field data form where
-they will collect the information measured at every sample plot. To easier find
-their way to every sample plot, they have requested a number of detail maps
+they will collect the information measured at every sample plot. To find
+their way to every sample plot, they have requested a number of detailed maps
 where some ground information can be clearly seen along with a smaller subset
 of sample plots and some information about the map area. You can use the Atlas
 tool to automatically generate a number of maps with a common format.
@@ -89,7 +89,8 @@ Leave the layout open but go back to the map. Let's add some background data and
 create some styling so that the map content is as clear as possible.
 
 #. Add the background raster :file:`basic_map.tif` that you can find in the
-   :file:`exercise_data\\forestry\\` folder.
+   :file:`exercise_data\\forestry\\` folder. (You will need to ensure this layer as below the other layers).
+   
 #. If prompted select the :guilabel:`ETRS89 / ETRS-TM35FIN` CRS for the raster.
 
    As you can see the background map is already styled. This type of ready to use
@@ -150,8 +151,8 @@ In order to keep it, and have a visualization of it that shows only the stand bo
 
 #. Go back to the print layout window often to see what the map would
    look like. For the purposes of creating detailed maps, you are looking for a
-   symbology that looks good not at the scale of the whole forest area (left image
-   below) but at a closer scale (right image below). Remember to use
+   symbology that looks good not at the scale of the whole forest area (right image
+   below) but at a closer scale (left image below). Remember to use
    |refresh| :sup:`Update map preview` and |setToCanvasExtent|
    :guilabel:`Set map extent to match main canvas extent`
    whenever you change the zoom in your map or the layout.
@@ -214,14 +215,14 @@ the visibility or order of the layers.
 
 #. Go back to the map, but don't close the :guilabel:`Print Layout`.
 #. Right click the :guilabel:`forest_stands_2012` layer and click on :guilabel:`Zoom
-   to Layer Extent`.
+   to Layer(s)`.
 #. Deactivate all layers except for :guilabel:`basic_map` and :guilabel:`forest_stands_2012`.
 #. Expand the :sup:`Manage map themes` tool on the :guilabel:`Layers` panel
    and select :guilabel:`Add theme`.
 #. Name it ``basic_overview``.
 #. Go back to the print layout.
 #. With the small map selected, click the :guilabel:`Set map extent to match
-   main canvas extent` to set its extents to what you can see in the map window.
+   main canvas extent` to set its extents to what you can see in the map window.  {Map extent issue here - map to correctly scaled. Guidance on how to adjust}
 #. Lock the view for the overview map by checking :guilabel:`Follow map theme`
    and selecting ``basic_overview`` under :guilabel:`Main properties`.
 
@@ -270,7 +271,7 @@ The Atlas coverage is just a vector layer that will be used to generate the
 detail maps, one map for every feature in the coverage. To get an idea of what
 you will do next, here is a full set of detail maps for the forest area:
 
-.. figure:: img/preview_atlas_results.png
+.. figure:: img/preview_atlas_results.png  { needs updating }
    :align: center
 
 The coverage could be any existing layer, but usually it makes more sense to
