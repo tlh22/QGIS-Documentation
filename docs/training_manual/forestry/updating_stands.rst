@@ -24,11 +24,11 @@ CIR aerial photographs and add information from other data-sets.
 The National Land Survey of Finland has an open data policy that allows you
 downloading a variety of geographical data like aerial imagery, traditional
 topographic maps, DEM, LiDAR data, etc. The service can be accessed also in
-English `here <https://tiedostopalvelu.maanmittauslaitos.fi/tp/kartta?lang=en>`_.
+English `here <https://asiointi.maanmittauslaitos.fi/karttapaikka/tiedostopalvelu?lang=en>`_.
 The aerial image used in this exercise has been created from two orthorectified
 CIR images downloaded from that service (M4134F_21062012 and M4143E_21062012). 
 
-* Open QGIS and set the project's CRS to :guilabel:`ETRS89 / ETRS-TM35FIN` in
+* Open QGIS and set the project's CRS to :guilabel:`ETRS89 / ETRS-TM35FIN(E,N) - EPSG:3067` in
   :menuselection:`Project --> Properties... --> CRS`.
 * From the :file:`exercise_data\\forestry\\` folder, add the CIR image
   :file:`rautjarvi_aerial.tif` that is containing the digitized lakes.
@@ -66,7 +66,7 @@ of the forest stands.
 
 * Remove the :kbd:`forest_stands_1994.shp` layer.
 * Add the :kbd:`forest_stands_2012.shp` layer, located in the :kbd:`exercise_data\\forestry\\` folder.
-* Set the styling of this layer so that the polygons have no fill and the borders are visible.
+* Set the styling of this layer to be the same as given in 14.3.4. {need to set up link}
 
 .. figure:: img/stands_2012_1.png
    :align: center
@@ -92,9 +92,9 @@ Some ideas about what you could identify from the images:
   around it.
 * Blueish areas indicate barren terrain, roads and urban areas, crops that have
   not started to grow etc.
-* Don't use zooms too close to the image when trying to identify forest stands.
-  A scale between 1:3 000 and 1: 5 000 should be enough for this imagery.
-  See the image below (1:4000 scale):
+* Don't use a zoom level too close to the image when trying to identify forest stands.
+  A scale between 1:3,000 and 1:5,000 should be enough for this imagery.
+  See the image below (1:4,000 scale):
 
 .. figure:: img/zoom_to_CIR_1-4000.png
    :align: center
@@ -115,13 +115,13 @@ With this indications in mind, you can now digitize the missing forest stands.
 * Set up the snapping and topology options as in the image.
 * Remember to click :guilabel:`Apply` or :guilabel:`OK`.
 
-.. figure:: img/snapping_2012.png
+.. figure:: img/snapping_2012.png  {Need to update}
    :align: center
 
 Start digitizing as you did in the previous lesson, with the only difference
 that you don't have any point layer that you are snapping to. For this area you
 should get around 14 new forest stands. While digitizing, fill in the
-:kbd:`Stand_id` field with numbers starting at :kbd:`901`.
+:kbd:`Stand_id` field with numbers starting at :kbd:`901`. {Are these duplicated?}
 
 When you are finished your layer should look something like:
 
@@ -170,7 +170,7 @@ able to mark the area that has to be left untouched before the work starts.
   15 meters from the locations.
 
 To join the information about the squirrels to your forest stands, you can use
-the :guilabel:`Join attributes by location`:
+the :guilabel:`Join attributes by location`:  {Check instructions}
 
 * Open :menuselection:`Vector --> Data Management Tools --> Join attributes by location`.
 * Set the :kbd:`forest_stands_2012.shp` layer as the :guilabel:`Target vector layer`.
@@ -184,7 +184,7 @@ the :guilabel:`Join attributes by location`:
 * Select :guilabel:`Yes` when prompted to add the layer to the TOC.
 * Close the dialogue box.
 
-.. figure:: img/join_squirrel_point.png
+.. figure:: img/join_squirrel_point.png {update screen}
    :align: center
    
 Now you have a new forest stands layer, :kbd:`stands_squirrel` where there are
@@ -195,7 +195,7 @@ Open the table of the new layer and order it so that the forest stands with
 information for the :guilabel:`Protection` attribute are on top. You should
 have now two forest stands where the squirrel has been located:
 
-.. figure:: img/joined_squirrel_point.png
+.. figure:: img/joined_squirrel_point.png {update screen}
    :align: center
 
 Although this information might be enough, look at what areas related to the
@@ -206,7 +206,7 @@ squirrels should be protected. You know that you have to leave a buffer of
 * Make a buffer of 15 meters for the :kbd:`squirrel` layer.
 * Name the result :kbd:`squirrel_15m.shp`.
 
-.. figure:: img/squirrel_15m.png
+.. figure:: img/squirrel_15m.png  {update screen}
    :align: center
 
 You will notice that if you zoom in to the location in the Northern part of the
@@ -214,7 +214,7 @@ area, the buffer area extends to the neighbouring stand as well. This means that
 whenever a forest operation would take place in that stand, the protected
 location should also be taken into account.
 
-.. figure:: img/north_squirrel_buffer.png
+.. figure:: img/north_squirrel_buffer.png  {update screen}
    :align: center
 
 From your previous analysis, you did not get that stand to register information
@@ -224,11 +224,11 @@ about the protection status. To solve this problem:
 * But this time use the :kbd:`squirrel_15m` layer as join layer.
 * Name the output file as :kbd:`stands_squirrel_15m.shp`.
 
-.. figure:: img/joined_squirrel_buffer.png
+.. figure:: img/joined_squirrel_buffer.png  {Update screen}
    :align: center
    
 Open the attribute table for the this new layer and note that now you have
-three forest stands that have the information about the protection locations.
+four? forest stands that have the information about the protection locations.
 The information in the forest stands data will indicate to the forest manager
 that there are protection considerations to be taken into account. Then he or
 she can get the location from the :kbd:`squirrel` dataset, and visit the area
