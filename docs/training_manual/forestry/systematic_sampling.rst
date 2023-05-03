@@ -47,7 +47,7 @@ of 68%). Variable size plots has been decided to be the most effective method
 for this inventory, for growing and mature stands, but a 4 meters fixed radius
 plots will be used for seedling stands.
 
-In practice, you simply need to represented the sample plots as points that
+In practice, you simply need to represent the sample plots as points that
 will be used by the field teams later:
 
 #. Open your :file:`digitizing_2012.qgs` project from the previous lesson.
@@ -130,8 +130,7 @@ You can create a new column for the ``systematic_plots_clip`` layer:
    #. In the :guilabel:`Expression` field, write, copy or construct this formula
       ``concat('P_', @rownum )``. Remember that you can also double click on the
       elements inside the :guilabel:`Function list`. The ``concat`` function can
-      be found under :guilabel:`String` and ``@rownum`` is under the :guilabel:`Variables
-      and values` group.
+      be found under :guilabel:`String` and ``@row_number`` is under the :guilabel:`Variables` group.
 #. Click :guilabel:`OK`.
 #. Disable the edit mode and save your changes.
 
@@ -156,7 +155,7 @@ save your data:
 #. Right-click ``systematic_plots_clip`` layer and select :menuselection:`Export -->
    Save features as...`.
 
-   .. figure:: img/gpx_creation.png
+   .. figure:: img/gpx_creation.png {update screen}
       :align: center
 
 #. In :guilabel:`Format` select :guilabel:`GPS eXchange Format [GPX]`.
